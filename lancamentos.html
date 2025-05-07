@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lancamentos.css" />
+    <title>Ford Enter Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo-ford-256.png" alt="Logo-Ford"></a>
+                </div>
+                <ul class="ul">
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="lancamentos.html"> Lançamentos </a> </li>
+                    <li> <a href="contato.html"> Contato </a> </li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="img/menu.png" alt="icone de menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="fundo-vid"></div>
+            <div class="main-vid">
+                <iframe src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&loop=1&playlist=vQsryuNmsL0"
+                    frameborder="0" allow="autoplay; encrypted-media">
+                </iframe>
+            </div>
+            <div class="ofertas-lancamento">
+                <div class="carros">
+                    <figure>
+                        <div class="carro-container">
+                            <img src="img/XL Cabine.jpg" alt="Ranger XL 2.2">
+                            <input type="checkbox" class="car-checkbox" name="carro" value="Ranger XL 2.2"
+                                alturaCacamba="511" alturaVeiculo="1821" alturaSolo="232" capacidadeCarga="1234"
+                                motor="2.2" potencia="160" volumeCacamba="1420" roda="Aço Estampado 16"
+                                preco="R$ 183.850,00">
+                            <img class="info-icon" src="img/info.png" alt="info" id="info-icon">
+                        </div>
+                        <figcaption>
+                            <span style="color: black;"><strong>Ranger</strong></span><br>
+                            <span style="color: blue;">XL cabine simples 2.2 Diesel 4x4 MT</span>
+                            <span style="color: black;">
+                                <p>Preço Sugerido: R$ 183.850,00</p>
+                            </span><br>
+                            <p id="info-text" class="hidden">A Ranger XL Cabine Simples 2.2 Diesel 4x4 MT é uma
+                                picape de entrada da Ford, equipada com motor 2.2 turbodiesel e transmissão manual
+                                (MT).</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="carro-container">
+                            <img src="img/xls 2.2 diesel.jpg" alt="Ranger KLS 2.2">
+                            <input type="checkbox" class="car-checkbox" name="carro" value="Ranger KLS 2.2"
+                                alturaCacamba="511" alturaVeiculo="1821" alturaSolo="232" capacidadeCarga="1076"
+                                motor="2.2" potencia="160" volumeCacamba="1180" roda="Aço Estampado 16"
+                                preco="R$ 220.690,00">
+                            <img class="info-icon" src="img/info.png" alt="info" id="info-icon">
+                        </div>
+                        <figcaption>
+                            <span style="color: black;"><strong>Ranger</strong></span><br>
+                            <span style="color: blue;">XLS 2.2 Diesel 4x4 AT ou 4x2 AT</span>
+                            <span style="color: black;">
+                                <p>Preço Sugerido: R$ 220.690,00</p>
+                            </span><br>
+                            <p id="info-text" class="hidden">A Ranger XLS 2.2 Diesel 4x4 AT ou 4x2 AT é uma picape
+                                robusta da Ford, equipada com motor 2.2 turbodiesel, oferecendo uma boa combinação
+                                de potência e eficiência de combustível.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="carro-container">
+                            <img src="img/storm.jpg" alt="Ranger Storm 3.2">
+                            <input type="checkbox" class="car-checkbox" name="carro" value="Ranger Storm 3.2"
+                                alturaCacamba="511" alturaVeiculo="1821" alturaSolo="232" capacidadeCarga="1040"
+                                motor="3.2" potencia="200" volumeCacamba="1180" roda="liga Leve 17"
+                                preco="R$ 222.790,00">
+                            <img class="info-icon" src="img/info.png" alt="info" id="info-icon">
+                        </div>
+                        <figcaption>
+                            <span style="color: black;"><strong>Ranger</strong></span><br>
+                            <span style="color: blue;">Storm 3.2 Diesel 4x4 AT</span>
+                            <span style="color: black;">
+                                <p>Preço Sugerido: R$ 222.790,00</p>
+                            </span><br>
+                            <p id="info-text" class="hidden">A Ranger Storm 3.2 Diesel 4x4 AT é uma versão mais
+                                esportiva e equipada da picape Ford Ranger, com motor 3.2 turbodiesel de alto
+                                desempenho e transmissão automática (AT).</p>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="botao-verificar">
+                <button onclick="verificarCarros()">Verificar</button>
+            </div>
+    </main>
+
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Carros Selecionados</h2>
+            </div>
+            <table class="modal-table" id="carros-selecionados" id="carros-selecionados"></table>
+            <span id="close-btn">Fechar</span>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR"><img src="img/facebook-50.png"
+                    alt="Facebook"></a>
+            <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
+        </div>
+        <img src="img/ford-96.png" class="rodape-logo" alt="Logo da Ford">
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/compare.js"></script>
+
+</body>
+
+</html>

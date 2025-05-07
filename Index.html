@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ford Enter Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo-ford-256.png" alt="Logo-Ford"></a>
+                </div>
+                <ul class="ul">
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="lancamentos.html"> Lançamentos </a> </li>
+                    <li> <a href="contato.html"> Contato </a> </li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="img/menu.png" alt="icone de menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="carrossel-container">
+
+                <div class="indicadores">
+                    <span class="indicador" onclick="mudarImagem(0)"></span>
+                    <span class="indicador" onclick="mudarImagem(1)"></span>
+                    <span class="indicador" onclick="mudarImagem(2)"></span>
+                </div>
+
+
+                <div class="carrossel">
+                    <div class="imagem-container">
+                        <img class="imagem" src="" alt="Imagem 1">
+                        <p class="descricao"></p>
+                    </div>
+                </div>
+
+
+                <button class="btn-prev" onclick="mudarImagemAtiva(-1)">&#10094;</button>
+                <button class="btn-next" onclick="mudarImagemAtiva(1)">&#10095;</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR"><img src="img/facebook-50.png"
+                    alt="Facebook"></a>
+            <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
+        </div>
+        <img src="img/ford-96.png" class="rodape-logo" alt="Logo da Ford">
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
