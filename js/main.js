@@ -1,4 +1,4 @@
-var menuIcon = document.querySelector('.menu-icon');
+ var menuIcon = document.querySelector('.menu-icon');
 var ul = document.querySelector('.ul');
 var rodape = document.querySelector('.rodape');
 
